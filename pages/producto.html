@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pie diabetico sas</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/footdiabetic_fav.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <script
+      src="https://kit.fontawesome.com/0e363eb4e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/assets/fontello-92fdea29/css/wha.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_paint">
+        <div class="header__superior">
+          <div class="logo">
+            <a href="index.html">
+              <img src="/assets/MarquillasLogoPagina.jpg" alt="" />
+            </a>
+          </div>
+          <div class="social">
+            <a href="#"><img src="/assets/bxl-instagram.svg" /></a>
+            <a href="#"><img src="/assets/bxl-twitter.svg" /></a>
+            <a href="#"><img src="/assets/bxl-facebook-circle.svg" /></a>
+            <a href="#"><img src="/assets/bxl-whatsapp.svg" /></a>
+            <a href="#"><img src="/assets/bxl-tiktok.svg" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container__menu">
+        <div class="menu">
+          <input type="checkbox" id="check__menu" />
+          <label for="check__menu" id="label__check">
+            <i class="fas fa-bars icon__menu"></i>
+          </label>
+          <nav>
+            <ul>
+              <li><a href="/index.html"></a></li>
+              <li><a href="/pages/quienes_Somos.html">Quienes Somos</a></li>
+              <li>
+                <a href="#">Servicios</a>
+                <ul>
+                  <li><a href="#">Farmacéutica y Laboratorio</a></li>
+                  <li><a href="#">Clínica</a></li>
+                  <li><a href="#">Finca</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/pages/contacto.html" id="selected">Contactos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="slider">
+        <!-- fade css -->
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>IMAGE 1</h1>
+            <p>Web Devoloper<br /></p>
+          </div>
+          <img src="/assets/img1.png" style="width: 100%; height: 100%" />
+        </div>
+
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>IMAGE 2</h1>
+            <p>Web Devoloper<br /></p>
+          </div>
+          <img src="/assets/img2.jpg" style="width: 100%; height: 100%" />
+        </div>
+
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>IMAGE 3</h1>
+            <p>Web Devoloper<br /></p>
+          </div>
+          <img src="/assets/img3.jpg" style="width: 100%; height: 100%" />
+        </div>
+
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>IMAGE 4</h1>
+            <p>Web Devoloper<br /></p>
+          </div>
+          <img src="/assets/img4.jpg" style="width: 100%; height: 100%" />
+        </div>
+
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>IMAGE 5</h1>
+            <p>Web Devoloper<br /></p>
+          </div>
+          <img src="/assets/img5.jpg" style="width: 100%; height: 100%" />
+        </div>
+        <!-- /fade css -->
+
+        <!-- onclick js -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dotsbox" style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        <!-- /onclick js -->
+      </div>
+      <script src="/js/jsfile.js"></script>
+
+      <!-- Producto  -->
+      <div id="content-wrapper">
+
+        <div class="column">
+          <div id="img-container">
+            <div id="lens"></div>
+            <img id=featured src="/assets/Inicio/Clinica.png">
+          </div>
+          <div id="slide-wrapper" >
+            <img id="slideLeft" class="arrow" src="/assets/arrow-left.png">
+    
+            <div id="slider">
+              <img class="thumbnail active" src="/assets/Inicio/Finca.png">
+              <img class="thumbnail" src="/assets/Inicio/Laboratorio.png">
+              <img class="thumbnail" src="/assets/Inicio/Clinica.png">
+        
+            </div>
+    
+            <img id="slideRight" class="arrow" src="/assets/arrow-right.png">
+          </div>
+        </div>
+    
+        <div class="column">
+          <h1>Awesome Shoes</h1>
+          <hr>
+          <h3>$89.99</h3>
+    
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    
+          <input value=1 type="number">
+          <a class="btn btn-dark" href="#">Add to Cart</a>
+        </div>
+    
+      </div>
+    
+      <script src="/js/slider.js"></script>
+      
+      
+      
+      <!-- Productos  -->
+      <div class="container_resp">
+        <div class="container_productos">
+          <div class="card">
+            <div class="imgBx">
+              <img src="/assets/Inicio/Finca.png" />
+              <ul class="action">
+                <li>
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                  <span>Agregar</span>
+                </li>
+                <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  <span>Agregar al carrito</span>
+                </li>
+                <li>
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                  <span>ver detalles</span>
+                </li>
+              </ul>
+            </div>
+            <div class="content">
+              <div class="productname">
+                <h3>Texto de Ejemplo</h3>
+              </div>
+              <div class="price_rating">
+                <h2>$13.45</h2>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa grey fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imgBx">
+              <img src="/assets/Inicio/Finca.png" />
+            </div>
+            <div class="content">
+              <div class="productname">
+                <h3>Texto de Ejemplo</h3>
+              </div>
+              <div class="price_rating">
+                <h2>$13.45</h2>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imgBx">
+              <img src="/assets/Inicio/Finca.png" />
+            </div>
+            <div class="content">
+              <div class="productname">
+                <h3>Texto de Ejemplo</h3>
+              </div>
+              <div class="price_rating">
+                <h2>$13.45</h2>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imgBx">
+              <img src="/assets/Inicio/Finca.png" />
+            </div>
+            <div class="content">
+              <div class="productname">
+                <h3>Texto de Ejemplo</h3>
+              </div>
+              <div class="price_rating">
+                <h2>$13.45</h2>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="imgBx">
+              <img src="/assets/Inicio/Finca.png" />
+            </div>
+            <div class="content">
+              <div class="productname">
+                <h3>Texto de Ejemplo</h3>
+              </div>
+              <div class="price_rating">
+                <h2>$13.45</h2>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cierre Productos  -->
+      <!-- Galeria de Imagenes  -->
+      <div>
+        <h1 style="text-align: center">SERVICIOS</h1>
+        <div class="image-gallery">
+          <div class="image-box">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/z4Gax0_Vi2w"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="image-box">
+            <img src="assets/Inicio/Clinica.png" alt="img.jpg" />
+            <div class="overlay">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">Your Title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">Category</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="assets/Inicio/Finca.png" alt="img.jpg" />
+            <div class="overlay">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">Your Title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">Category</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="assets/Inicio/Laboratorio.png" alt="img.jpg" />
+            <div class="overlay">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">Your Title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">Category</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="assets/Inicio/Productos.png" alt="img.jpg" />
+            <div class="overlay">
+              <div class="details">
+                <h3 class="title">
+                  <a href="#">Your Title</a>
+                </h3>
+                <span class="category">
+                  <a href="#">Category</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cierre Galeria de Imagenes  -->
+      <!-- Contactos  -->
+      <div class="contactUs">
+        <div class="contact_title">
+          <h2>Ponerse en Contacto</h2>
+        </div>
+        <div class="box_contact">
+          <!-- Form -->
+          <div class="contact form">
+            <h3>Enviar Mensaje</h3>
+            <form>
+              <div class="form_Box">
+                <div class="row50">
+                  <div class="input_Box">
+                    <span>Primer Nombre</span>
+                    <input type="text_contact" placeholder="Alan" />
+                  </div>
+                  <div class="input_Box">
+                    <span>Apellido</span>
+                    <input type="text_contact" placeholder="Rueda" />
+                  </div>
+                </div>
+
+                <div class="row50">
+                  <div class="input_Box">
+                    <span>Email</span>
+                    <input
+                      type="text_contact"
+                      placeholder="josuerueda1998@gmail.com"
+                    />
+                  </div>
+                  <div class="input_Box">
+                    <span>Telefono</span>
+                    <input type="text_contact" placeholder="+91 979316151" />
+                  </div>
+                </div>
+
+                <div class="row100">
+                  <div class="input_Box">
+                    <span>Mensaje</span>
+                    <textarea
+                      placeholder="Escribe tu mensaje aquí..."
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="row100">
+                  <div class="input_Box">
+                    <input type="submit" value="Enviar" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!--Info box -->
+          <div class="contact info">
+            <h3>Informacion del Contacto</h3>
+            <div class="info_Box">
+              <div>
+                <span>
+                  <a href="#"><img src="/assets/bx-location-plus.svg" /></a>
+                </span>
+                <p>
+                  Texto de Ejemplo <br />
+                  texto de ejemplo
+                </p>
+              </div>
+              <div>
+                <span
+                  ><a href="#"><img src="/assets/bx-envelope.svg" /></a>
+                </span>
+                <a href="mailto:ajguamanr@utn.edu.ec">ajguamanr@utn.edu.ec</a>
+              </div>
+              <div>
+                <span
+                  ><a href="#"><img src="/assets/bx-phone-call.svg" /></a
+                ></span>
+                <a href="tel: +91 9426351">+91 979 422 351 </a>
+              </div>
+
+              <!--Links medios sociales-->
+              <ul class="sci">
+                <li>
+                  <a href="#"><img src="/assets/bxl-instagram.svg" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="/assets/bxl-twitter.svg" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="/assets/bxl-facebook-circle.svg" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="/assets/bxl-whatsapp.svg" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="/assets/bxl-tiktok.svg" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!--Map-->
+          <div class="contact map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d593.0794073179926!2d-78.11190832514674!3d0.3431116146321699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1647109018853!5m2!1ses!2sec"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Cierre Contactos  -->
+
+      <article>
+        <h2>1231231</h2>
+        <p>
+          Los párrafos cortos son aquellos párrafos que tienen entre tres y seis
+          líneas. Si bien existen párrafos más extensos, que pueden llegar hasta
+          las veinte líneas, lo recomendable es que un párrafo no tenga más de
+          cuatro o cinco oraciones. Un párrafo es una unidad de un texto
+          compuesta por una o varias oraciones, que comienza con una mayúscula y
+          que termina con un punto y aparte. Los textos se organizan de manera
+          tal que cada párrafo trata sobre una idea central. Generalmente, la
+          primera oración de cada párrafo suele explicitar cuál es el punto
+          principal que se desarrollará. La extensión de los párrafos varía en
+          relación con el tipo de texto que se escribe y con el soporte del
+          texto. Por ejemplo, si el texto se imprime en papel, se recomienda que
+          haya entre tres y ocho párrafos por página. De todas formas, los
+          párrafos cortos son más recomendables, porque son más fáciles de leer
+          y de comprender. Para que un texto sea más agradable visualmente, se
+          recomienda que todos los párrafos tengan más o menos la misma
+          extensión. Por eso, si se utiliza un párrafo corto, se recomienda que
+          todos los párrafos del texto también sean cortos.
+        </p>
+        <h2>1231231</h2>
+        <p>
+          Los párrafos cortos son aquellos párrafos que tienen entre tres y seis
+          líneas. Si bien existen párrafos más extensos, que pueden llegar hasta
+          las veinte líneas, lo recomendable es que un párrafo no tenga más de
+          cuatro o cinco oraciones. Un párrafo es una unidad de un texto
+          compuesta por una o varias oraciones, que comienza con una mayúscula y
+          que termina con un punto y aparte. Los textos se organizan de manera
+          tal que cada párrafo trata sobre una idea central. Generalmente, la
+          primera oración de cada párrafo suele explicitar cuál es el punto
+          principal que se desarrollará. La extensión de los párrafos varía en
+          relación con el tipo de texto que se escribe y con el soporte del
+          texto. Por ejemplo, si el texto se imprime en papel, se recomienda que
+          haya entre tres y ocho párrafos por página. De todas formas, los
+          párrafos cortos son más recomendables, porque son más fáciles de leer
+          y de comprender. Para que un texto sea más agradable visualmente, se
+          recomienda que todos los párrafos tengan más o menos la misma
+          extensión. Por eso, si se utiliza un párrafo corto, se recomienda que
+          todos los párrafos del texto también sean cortos.
+        </p>
+      </article>
+    </main>
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d705.2942509974005!2d-78.11153946394249!3d0.34311089229207065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1646508582054!5m2!1ses!2sec"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <footer>
+      <div class="container__footer">
+        <div class="box__footer">
+          <div class="logo">
+            <img src="assets/PEDIDOS.png" alt="" />
+          </div>
+          <div class="terms">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              incidunt nam hic quibusdam asperiores enim veritatis, itaque dolor
+              assumenda maxime aliquam beatae odio sapiente, libero amet veniam
+              delectus recusandae neque!
+            </p>
+          </div>
+        </div>
+
+        <div class="box__footer">
+          <h2>Soluciones</h2>
+          <a href="#">App Desarrollador</a>
+          <a href="#">App Marketing</a>
+          <a href="#">IOS Desarrollo </a>
+          <a href="#">Android Desarrollo</a>
+        </div>
+        <div class="box__footer">
+          <h2>Compañia</h2>
+          <a href="#">Acerca de</a>
+          <a href="#">Trabajos</a>
+          <a href="#">Porcesos </a>
+          <a href="#">Servicios</a>
+        </div>
+        <div class="box__footer">
+          <h2>Compañia</h2>
+          <a href="#">Facebook</a>
+          <a href="#">Twiter</a>
+          <a href="#">Linkedin</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+      <div class="box__copyright">
+        <hr />
+        <p>
+          Todos los derechos reservados © 2022
+          <b>Alan Rueda</b>
+        </p>
+      </div>
+    </footer>
+
+    <a
+      href="https://api.whatsapp.com/send?phone=0979426351"
+      class="btn_wsp"
+      target="_blank"
+    >
+      <i class="icon-whatsapp"></i>
+    </a>
+  </body>
+</html>

@@ -609,128 +609,148 @@ footer {
 /*----------------*/
 
 /*Producto*/
-
-
-body{
-	padding-top: 100px;
+.container_producto{
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.single_product{
+  margin-top: 80px;
+}
+.small_img_row{
+  display: flex;
+  justify-content: space-around;
+}
+.col_2 img{
+  max-width: 100%;
+  padding: 50px 0;
+}
+.small_img_col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+.single_product .col_2 img{
+  padding: 0;
+}
+.single_product .col_2{
+  padding: 10px;
+}
+.col_2{
+  flex-basis: 50%;
+   min-width: 300px;
+}
+.col_2 h1{
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+.single_product select{
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+}
+.single_product h4{
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.single_product input{
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid #ff523b;
+}
+input:focus{
+  outline: none;
+}
+.container_producto a{
+  text-decoration: none;
+  color: #555;
+}
+.single_product .fa{
+  color: #ff523b;
+  margin-left: 10px;
+}
+.container_producto p{
+  color: #555;
+}
+.btn{
+  display: inline-block;
+  background: #ff523b;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition:  0.5s;
+}
+.btn:hover{
+  background: #563434;
 }
 
-#content-wrapper{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+/*--------------zoom------------------*/
+/*--------------Loader------------------*/
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #023877;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
 }
 
-.column{
-	width: 600px;
-	padding: 10px;
+.centrado{
+  width: 100%;
+  height: 100%;
+  /*background-color: #04D3E3;*/
+  background-color:  rgb(99, 201, 226);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  clip-path: circle(150% at 100% 0);
+  transition: clip-path 0.4s ease-in-out;
 
 }
-
-#featured{
-	max-width: 500px;
-	max-height: 600px;
-
-	cursor: pointer;
-	border: 2px solid black;
-
+.centrado2{
+  clip-path: circle(0% at 100% 0);
 }
-
-.thumbnail{
-	object-fit: cover;
-	max-width: 180px;
-	max-height: 100px;
-	cursor: pointer;
-	opacity: 0.5;
-	margin: 5px;
-	border: 2px solid black;
-
-}
-
-.thumbnail:hover{
-	opacity:1;
-}
-
-.active{
-	opacity: 1;
-}
-
-#slide-wrapper{
-	margin-top: 30px;
-	max-width: 500px;
-	display: flex;
-	min-height: 100px;
-	align-items: center;
-}
-
-#slider{
-	width: 440px;
-	display: flex;
-	flex-wrap: nowrap;
-	overflow-x: auto;
-
-}
-
-#slider::-webkit-scrollbar {
-		width: 8px;
-
-}
-
-#slider::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-
-}
- 
-#slider::-webkit-scrollbar-thumb {
-  background-color: #dede2e;
-  outline: 1px solid slategrey;
-   border-radius: 100px;
-
-}
-
-#slider::-webkit-scrollbar-thumb:hover{
-    background-color: #18b5ce;
-}
-
-.arrow{
-	width: 30px;
-	height: 30px;
-	cursor: pointer;
-	transition: .3s;
-}
-
-.arrow:hover{
-	opacity: .5;
-	width: 35px;
-	height: 35px;
-}
-
-#img-container{
-	z-index: 1;
-	max-width: 500px;
-	position: relative;
-}
-
-#lens{
-	z-index: 2;
-	position: absolute;
-
-	height: 125px;
-	width: 125px;
-	border:2px solid black;
-	background-repeat: no-repeat;
-	cursor: none;
-
-}
-
-/* IMAGE ZOOM CSS Start */
-
-
-
-/* IMAGE ZOOM CSS END */
-
-
 
 /*----------------*/
 /*Productos*/

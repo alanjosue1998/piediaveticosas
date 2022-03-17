@@ -1,30 +1,15 @@
-let thumbnails = document.getElementsByClassName('thumbnail')
+let miniatura = document.getElementsByClassName('miniatura')
+let Image_active = document.getElementsByClassName('active')
+for (var i=0; i < miniatura.length; i++){
 
-let activeImages = document.getElementsByClassName('active')
-
-for (var i=0; i < thumbnails.length; i++){
-
-	thumbnails[i].addEventListener('click', function(){
-		console.log(activeImages)
+	miniatura[i].addEventListener('click', function(){
 		
-		if (activeImages.length > 0){
-			activeImages[0].classList.remove('active')
-		}
+		if (Image_active.length > 0){
+			Image_active[0].classList.remove('active')
+		}	
 		
-
 		this.classList.add('active')
-		document.getElementById('featured').src = this.src
+		document.getElementById('destacado').src = this.src
 	})
 }
 
-
-let buttonRight = document.getElementById('slideRight');
-let buttonLeft = document.getElementById('slideLeft');
-
-buttonLeft.addEventListener('click', function(){
-	document.getElementById('slider').scrollLeft -= 180
-})
-
-buttonRight.addEventListener('click', function(){
-	document.getElementById('slider').scrollLeft += 180
-})
